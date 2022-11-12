@@ -11,8 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var btn1 = findViewById<Button>(R.id.btn_marker1)
-        btn1.bringToFront()
     }
 
     fun marker1Click(view: View)
