@@ -13,6 +13,15 @@
         <action
             android:id="@+id/action_allMapFragment_to_mapTopLeftFragment"
             app:destination="@id/mapTopLeftFragment" />
+        <action
+            android:id="@+id/action_allMapFragment_to_mapTopRightFragment"
+            app:destination="@id/mapTopRightFragment" />
+        <action
+            android:id="@+id/action_allMapFragment_to_mapDownLeftFragment"
+            app:destination="@id/mapDownLeftFragment" />
+        <action
+            android:id="@+id/action_allMapFragment_to_mapDownRightFragment"
+            app:destination="@id/mapDownRightFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapTopLeftFragment"
@@ -21,6 +30,33 @@
         tools:layout="@layout/fragment_map_top_left" >
         <action
             android:id="@+id/action_mapTopLeftFragment_to_allMapFragment"
+            app:destination="@id/allMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapTopRightFragment"
+        android:name="com.prototype.project_nf_1_view.fragments.MapTopRightFragment"
+        android:label="Top Right Map"
+        tools:layout="@layout/fragment_map_top_right" >
+        <action
+            android:id="@+id/action_mapTopRightFragment_to_allMapFragment"
+            app:destination="@id/allMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapDownLeftFragment"
+        android:name="com.prototype.project_nf_1_view.fragments.MapDownLeftFragment"
+        android:label="Down Left Map"
+        tools:layout="@layout/fragment_map_down_left" >
+        <action
+            android:id="@+id/action_mapDownLeftFragment_to_allMapFragment"
+            app:destination="@id/allMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapDownRightFragment"
+        android:name="com.prototype.project_nf_1_view.fragments.MapDownRightFragment"
+        android:label="Down Right Map"
+        tools:layout="@layout/fragment_map_down_right" >
+        <action
+            android:id="@+id/action_mapDownRightFragment_to_allMapFragment"
             app:destination="@id/allMapFragment" />
     </fragment>
 </navigation>

@@ -25,7 +25,9 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_bottom_sheet, container, false)
 
-        val addressNo = "61"
+        var addressNo = arguments?.getString("address") ?: "61" //default value
+
+
         // View items
         val tv_address = view.findViewById<TextView>(R.id.tv_address)
         val tv_vhv_name = view.findViewById<TextView>(R.id.tv_vhv_name)
@@ -38,9 +40,10 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
 
         //PersonViewModel
         mPersonViewModel = ViewModelProvider(this)[PersonViewModel::class.java]
-        mPersonViewModel.readPersonByAddress(addressNo).observe(viewLifecycleOwner, Observer { person ->
-            adapter.setData(person)
-        })
+        mPersonViewModel.readPersonByAddress(addressNo)
+            .observe(viewLifecycleOwner, Observer { person ->
+                adapter.setData(person)
+            })
 
         tv_address.text = "บ้านเลขที่ $addressNo"
         mPersonViewModel.readVhvByAddress(addressNo).observe(viewLifecycleOwner, Observer { vhv ->
@@ -53,11 +56,6 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val btn_edit = view.findViewById<View>(R.id.btn_edit)
-
-        btn_edit.setOnClickListener {
-            Toast.makeText(context, "Edit pressed", Toast.LENGTH_SHORT).show()
-        }
     }
 
 }

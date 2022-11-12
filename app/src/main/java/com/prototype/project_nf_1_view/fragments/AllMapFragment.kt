@@ -30,12 +30,15 @@ class AllMapFragment : Fragment() {
         }
         btn_tr.setOnClickListener {
             Toast.makeText(context, "Top Right", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_allMapFragment_to_mapTopRightFragment)
         }
         btn_dl.setOnClickListener {
             Toast.makeText(context, "Down Left", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_allMapFragment_to_mapDownLeftFragment)
         }
         btn_dr.setOnClickListener {
             Toast.makeText(context, "Down Right", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_allMapFragment_to_mapDownRightFragment)
         }
 
         return view
