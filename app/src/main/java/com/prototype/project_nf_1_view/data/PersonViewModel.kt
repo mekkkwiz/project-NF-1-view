@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 
 class PersonViewModel(application: Application): AndroidViewModel(application) {
 
-    private val reaAllData: LiveData<List<Person>>
+    val reaAllData: LiveData<List<Person>>
     private val repository: PersonRepository
 
     init {
@@ -15,15 +15,15 @@ class PersonViewModel(application: Application): AndroidViewModel(application) {
         reaAllData = repository.allPersons
     }
 
-    fun readPersonByAddress(personAddress: String): LiveData<List<Person>> {
+     fun readPersonByAddress(personAddress: String): LiveData<List<Person>> {
         return repository.readPersonByAddress(personAddress)
     }
 
-    fun readAddressByFirstName(firstName: String): String {
+    fun readAddressByFirstName(firstName: String): LiveData<String> {
         return repository.readAddressByFirstName(firstName)
     }
 
-    fun readVhvByAddress(personAddress: String): String {
+     fun readVhvByAddress(personAddress: String): LiveData<String> {
         return repository.readVhvByAddress(personAddress)
     }
 }

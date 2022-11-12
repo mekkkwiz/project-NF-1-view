@@ -22,11 +22,11 @@ class PersonRepository(private val personDao: PersonDao) {
         return personDao.readPersonByAddress(personAddress)
     }
 
-    fun readAddressByFirstName(firstName: String): String {
+    fun readAddressByFirstName(firstName: String): LiveData<String> {
         return personDao.readAddressByFirstName(firstName)
     }
 
-    fun readVhvByAddress(personAddress: String): String {
+    fun readVhvByAddress(personAddress: String): LiveData<String> {
         return personDao.readVhvByAddress(personAddress)
     }
 }

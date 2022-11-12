@@ -12,7 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-<!--        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>-->
-<!--        <item name="buttonStyle">@style/RobotoButtonStyle</item>-->
+        <item name="android:fontFamily">@font/kanit_semi_bold</item>
+
     </style>
 </resources>

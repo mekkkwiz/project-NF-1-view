@@ -17,8 +17,8 @@ interface PersonDao {
     fun readPersonByAddress(personAddress: String): LiveData<List<Person>>
 
     @Query("SELECT address FROM person_table WHERE first_name IN (:firstName)")
-    fun readAddressByFirstName(firstName: String): String
+    fun readAddressByFirstName(firstName: String): LiveData<String>
 
     @Query("SELECT vhv FROM person_table WHERE address IN (:personAddress)")
-    fun readVhvByAddress(personAddress: String): String
+    fun readVhvByAddress(personAddress: String): LiveData<String>
 }
