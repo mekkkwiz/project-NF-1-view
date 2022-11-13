@@ -36,6 +36,7 @@ class DialogListAdapter: RecyclerView.Adapter<DialogListAdapter.ViewHolder>() {
             "Yellow" -> holder.color.setBackgroundColor(Color.YELLOW)
             "Green" -> holder.color.setBackgroundColor(Color.GREEN)
             "Orange" -> holder.color.setBackgroundColor(Color.parseColor("#FFA500"))
+            "Headman" -> holder.color.setImageResource(R.drawable.ic_headman)
         }
 
     }

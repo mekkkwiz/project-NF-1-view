@@ -25,7 +25,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_bottom_sheet, container, false)
 
-        var addressNo = arguments?.getString("address") ?: "61" //default value
+        var addressNo = arguments?.getString("address") ?: "-" //default value
 
 
         // View items
@@ -46,6 +46,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
             })
 
         tv_address.text = "บ้านเลขที่ $addressNo"
+
         mPersonViewModel.readVhvByAddress(addressNo).observe(viewLifecycleOwner, Observer { vhv ->
             tv_vhv_name.text = vhv
         })
