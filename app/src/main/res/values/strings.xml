@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">project-NF-1-view</string>
-    <string name="marker1">marker1</string>
-    <string name="maker1">maker1</string>
+    <string name="app_name">แผนที่คู่ใจ หลังไหน HT DM</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

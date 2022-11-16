@@ -27,7 +27,9 @@ class MapDownLeftFragment : Fragment(), View.OnClickListener {
         val btn_8 = view.findViewById<View>(R.id.btn_8)
         val btn_10_1 = view.findViewById<View>(R.id.btn_10_1)
         val btn_13 = view.findViewById<View>(R.id.btn_13)
+        val btn_14 = view.findViewById<View>(R.id.btn_14)
         val btn_35_2 = view.findViewById<View>(R.id.btn_35_2)
+        val btn_35_3 = view.findViewById<View>(R.id.btn_35_3)
         val btn_44_1_1 = view.findViewById<View>(R.id.btn_44_1_1)
         val btn_49_3 = view.findViewById<View>(R.id.btn_49_3)
         val btn_51_1 = view.findViewById<View>(R.id.btn_51_1)
@@ -38,6 +40,7 @@ class MapDownLeftFragment : Fragment(), View.OnClickListener {
         val btn_102 = view.findViewById<View>(R.id.btn_102)
         val btn_107= view.findViewById<View>(R.id.btn_107)
         val btn_111 = view.findViewById<View>(R.id.btn_111)
+        val btn_124 = view.findViewById<View>(R.id.btn_124)
 
         btn_2_3.setOnClickListener(this)
         btn_3.setOnClickListener(this)
@@ -45,7 +48,9 @@ class MapDownLeftFragment : Fragment(), View.OnClickListener {
         btn_8.setOnClickListener(this)
         btn_10_1.setOnClickListener(this)
         btn_13.setOnClickListener(this)
+        btn_14.setOnClickListener(this)
         btn_35_2.setOnClickListener(this)
+        btn_35_3.setOnClickListener(this)
         btn_44_1_1.setOnClickListener(this)
         btn_49_3.setOnClickListener(this)
         btn_51_1.setOnClickListener(this)
@@ -56,6 +61,7 @@ class MapDownLeftFragment : Fragment(), View.OnClickListener {
         btn_102.setOnClickListener(this)
         btn_107.setOnClickListener(this)
         btn_111.setOnClickListener(this)
+        btn_124.setOnClickListener(this)
 
 
         return view

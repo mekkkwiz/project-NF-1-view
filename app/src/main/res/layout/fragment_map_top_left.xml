@@ -46,20 +46,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.92" />
 
-            <Button
-                android:id="@+id/btn_44_1_1"
-                android:layout_width="28dp"
-                android:layout_height="27dp"
-                android:alpha="0.0"
-                android:background="@drawable/home_icon"
-                android:onClick="onClick"
-                android:text="44/1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.932"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.944" />
 
             <Button
                 android:id="@+id/btn_111"
@@ -92,6 +78,51 @@
                 app:layout_constraintVertical_bias="0.339" />
 
             <Button
+                android:id="@+id/btn_64_1"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:alpha="0.0"
+                android:background="@drawable/home_icon"
+                android:onClick="onClick"
+                android:text="64/1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.245" />
+
+            <Button
+                android:id="@+id/btn_67"
+                android:layout_width="29dp"
+                android:layout_height="27dp"
+                android:alpha="0.0"
+                android:background="@drawable/home_icon"
+                android:onClick="onClick"
+                android:text="67"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.84"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.251" />
+
+            <Button
+                android:id="@+id/btn_77"
+                android:layout_width="44dp"
+                android:layout_height="34dp"
+                android:alpha="0.0"
+                android:background="@drawable/home_icon"
+                android:onClick="onClick"
+                android:text="77"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.865"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.382" />
+
+            <Button
                 android:id="@+id/btn_99"
                 android:layout_width="33dp"
                 android:layout_height="31dp"
@@ -105,6 +136,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.623" />
+
+            <Button
+                android:id="@+id/btn_62_6"
+                android:layout_width="33dp"
+                android:layout_height="31dp"
+                android:alpha="0.0"
+                android:background="@drawable/home_icon"
+                android:onClick="onClick"
+                android:text="62/6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.659" />
 
             <Button
                 android:id="@+id/btn_44"
@@ -180,21 +226,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.745" />
-
-            <Button
-                android:id="@+id/btn_58"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:alpha="0.0"
-                android:background="@drawable/home_icon"
-                android:onClick="onClick"
-                android:text="58"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.743"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.82" />
 
             <Button
                 android:id="@+id/btn_58_1"
@@ -300,21 +331,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.205" />
-
-            <Button
-                android:id="@+id/btn_97"
-                android:layout_width="35dp"
-                android:layout_height="32dp"
-                android:alpha="0.0"
-                android:background="@drawable/home_icon"
-                android:onClick="onClick"
-                android:text="97"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.91"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.285" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

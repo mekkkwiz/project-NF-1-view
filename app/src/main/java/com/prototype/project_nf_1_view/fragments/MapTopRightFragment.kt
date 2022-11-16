@@ -2,11 +2,11 @@ package com.prototype.project_nf_1_view.fragments
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import com.prototype.project_nf_1_view.BottomSheetFragment
 import com.prototype.project_nf_1_view.R
 
@@ -20,13 +20,16 @@ class MapTopRightFragment : Fragment(), View.OnClickListener {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_map_top_right, container, false)
 
-        val bottomSheetFragment = BottomSheetFragment()
 
 
         val btn_9 = view.findViewById<View>(R.id.btn_9)
         val btn_97 = view.findViewById<View>(R.id.btn_97)
         val btn_65 = view.findViewById<View>(R.id.btn_65)
+        val btn_67 = view.findViewById<View>(R.id.btn_67)
+        val btn_62_3 = view.findViewById<View>(R.id.btn_62_3)
         val btn_62_5 = view.findViewById<View>(R.id.btn_62_5)
+        val btn_62_6 = view.findViewById<View>(R.id.btn_62_6)
+        val btn_77 = view.findViewById<View>(R.id.btn_77)
         val btn_101 = view.findViewById<View>(R.id.btn_101)
         val btn_103 = view.findViewById<View>(R.id.btn_103)
         val btn_112 = view.findViewById<View>(R.id.btn_112)
@@ -53,7 +56,11 @@ class MapTopRightFragment : Fragment(), View.OnClickListener {
         btn_9.setOnClickListener(this)
         btn_97.setOnClickListener(this)
         btn_65.setOnClickListener(this)
+        btn_67.setOnClickListener(this)
+        btn_62_3.setOnClickListener(this)
         btn_62_5.setOnClickListener(this)
+        btn_62_6.setOnClickListener(this)
+        btn_77.setOnClickListener(this)
         btn_101.setOnClickListener(this)
         btn_103.setOnClickListener(this)
         btn_112.setOnClickListener(this)

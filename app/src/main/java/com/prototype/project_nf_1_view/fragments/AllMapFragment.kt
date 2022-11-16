@@ -1,11 +1,10 @@
 package com.prototype.project_nf_1_view.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.prototype.project_nf_1_view.R
 
@@ -25,19 +24,15 @@ class AllMapFragment : Fragment() {
         val btn_dr = view.findViewById<View>(R.id.btn_dr)
 
         btn_tl.setOnClickListener {
-            Toast.makeText(context, "Top Left", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_allMapFragment_to_mapTopLeftFragment)
         }
         btn_tr.setOnClickListener {
-            Toast.makeText(context, "Top Right", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_allMapFragment_to_mapTopRightFragment)
         }
         btn_dl.setOnClickListener {
-            Toast.makeText(context, "Down Left", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_allMapFragment_to_mapDownLeftFragment)
         }
         btn_dr.setOnClickListener {
-            Toast.makeText(context, "Down Right", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_allMapFragment_to_mapDownRightFragment)
         }
 

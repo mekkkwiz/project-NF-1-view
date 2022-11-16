@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:src="@drawable/map_new"
+        android:src="@drawable/map_hd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

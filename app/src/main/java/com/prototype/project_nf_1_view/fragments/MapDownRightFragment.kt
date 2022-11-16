@@ -24,10 +24,12 @@ class MapDownRightFragment : Fragment(), View.OnClickListener {
         val btn_9 = view.findViewById<Button>(R.id.btn_9)
         val btn_10_1 = view.findViewById<Button>(R.id.btn_10_1)
         val btn_13 = view.findViewById<Button>(R.id.btn_13)
+        val btn_14 = view.findViewById<Button>(R.id.btn_14)
         val btn_15 = view.findViewById<Button>(R.id.btn_15)
         val btn_15_2 = view.findViewById<Button>(R.id.btn_15_2)
         val btn_16_2 = view.findViewById<Button>(R.id.btn_16_2)
         val btn_16_3 = view.findViewById<Button>(R.id.btn_16_3)
+        val btn_17 = view.findViewById<Button>(R.id.btn_17)
         val btn_17_1 = view.findViewById<Button>(R.id.btn_17_1)
         val btn_18 = view.findViewById<Button>(R.id.btn_18)
         val btn_19 = view.findViewById<Button>(R.id.btn_19)
@@ -37,6 +39,7 @@ class MapDownRightFragment : Fragment(), View.OnClickListener {
         val btn_45_1 = view.findViewById<Button>(R.id.btn_45_1)
         val btn_52_3 = view.findViewById<Button>(R.id.btn_52_3)
         val btn_104 = view.findViewById<Button>(R.id.btn_104)
+        val btn_110 = view.findViewById<Button>(R.id.btn_110)
 
 
         btn_2_3.setOnClickListener(this)
@@ -44,10 +47,12 @@ class MapDownRightFragment : Fragment(), View.OnClickListener {
         btn_9.setOnClickListener(this)
         btn_10_1.setOnClickListener(this)
         btn_13.setOnClickListener(this)
+        btn_14.setOnClickListener(this)
         btn_15.setOnClickListener(this)
         btn_15_2.setOnClickListener(this)
         btn_16_2.setOnClickListener(this)
         btn_16_3.setOnClickListener(this)
+        btn_17.setOnClickListener(this)
         btn_17_1.setOnClickListener(this)
         btn_18.setOnClickListener(this)
         btn_19.setOnClickListener(this)
@@ -57,6 +62,7 @@ class MapDownRightFragment : Fragment(), View.OnClickListener {
         btn_45_1.setOnClickListener(this)
         btn_52_3.setOnClickListener(this)
         btn_104.setOnClickListener(this)
+        btn_110.setOnClickListener(this)
 
         return view
     }

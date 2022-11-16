@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/allMapFragment"
         android:name="com.prototype.project_nf_1_view.fragments.AllMapFragment"
-        android:label="Map"
+        android:label="แผนที่คู่ใจ หลังไหน HT DM"
         tools:layout="@layout/fragment_all_map" >
         <action
             android:id="@+id/action_allMapFragment_to_mapTopLeftFragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/mapTopLeftFragment"
         android:name="com.prototype.project_nf_1_view.fragments.MapTopLeftFragment"
-        android:label="Top Left Map"
+        android:label="กลับ"
         tools:layout="@layout/fragment_map_top_left" >
         <action
             android:id="@+id/action_mapTopLeftFragment_to_allMapFragment"
@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/mapTopRightFragment"
         android:name="com.prototype.project_nf_1_view.fragments.MapTopRightFragment"
-        android:label="Top Right Map"
+        android:label="กลับ"
         tools:layout="@layout/fragment_map_top_right" >
         <action
             android:id="@+id/action_mapTopRightFragment_to_allMapFragment"
@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/mapDownLeftFragment"
         android:name="com.prototype.project_nf_1_view.fragments.MapDownLeftFragment"
-        android:label="Down Left Map"
+        android:label="กลับ"
         tools:layout="@layout/fragment_map_down_left" >
         <action
             android:id="@+id/action_mapDownLeftFragment_to_allMapFragment"
@@ -53,7 +53,7 @@
     <fragment
         android:id="@+id/mapDownRightFragment"
         android:name="com.prototype.project_nf_1_view.fragments.MapDownRightFragment"
-        android:label="Down Right Map"
+        android:label="กลับ"
         tools:layout="@layout/fragment_map_down_right" >
         <action
             android:id="@+id/action_mapDownRightFragment_to_allMapFragment"

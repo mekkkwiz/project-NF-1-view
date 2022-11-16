@@ -17,9 +17,9 @@ class DialogListAdapter: RecyclerView.Adapter<DialogListAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        val color = itemView.findViewById<ImageView>(R.id.img_color)
-        val f_Name = itemView.findViewById<TextView>(R.id.tv_f_name)
-        val l_name = itemView.findViewById<TextView>(R.id.tv_l_name)
+        val color = itemView.findViewById<ImageView>(R.id.img_color)!!
+        val fName = itemView.findViewById<TextView>(R.id.tv_f_name)!!
+        val lName = itemView.findViewById<TextView>(R.id.tv_l_name)!!
 
     }
 
@@ -28,14 +28,14 @@ class DialogListAdapter: RecyclerView.Adapter<DialogListAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var currentItem = personList[position]
-        holder.f_Name.text = currentItem.firstName
-        holder.l_name.text = currentItem.lastName
+        val currentItem = personList[position]
+        holder.fName.text = currentItem.firstName
+        holder.lName.text = currentItem.lastName
         when (currentItem.color) {
-            "Red" -> holder.color.setBackgroundColor(Color.RED)
-            "Yellow" -> holder.color.setBackgroundColor(Color.YELLOW)
-            "Green" -> holder.color.setBackgroundColor(Color.GREEN)
-            "Orange" -> holder.color.setBackgroundColor(Color.parseColor("#FFA500"))
+            "Red" -> holder.color.setBackgroundColor(Color.parseColor("#d20000"))
+            "Yellow" -> holder.color.setBackgroundColor(Color.parseColor("#ffd300"))
+            "Green" -> holder.color.setBackgroundColor(Color.parseColor("#90d300"))
+            "Orange" -> holder.color.setBackgroundColor(Color.parseColor("#ff7e1a"))
             "Headman" -> holder.color.setImageResource(R.drawable.ic_headman)
         }
 
